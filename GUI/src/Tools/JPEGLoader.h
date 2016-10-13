@@ -86,7 +86,7 @@ class JPEGLoader
 
                 for(int i = 0; i < width; i++, bgr += 3, rgb += 3)
                 {
-                    unsigned char t0 = bgr[2], t1 = bgr[1], t2 = bgr[0];
+                    unsigned char t0 = bgr[0], t1 = bgr[1], t2 = bgr[2];
                     rgb[2] = t0; rgb[1] = t1; rgb[0] = t2;
                 }
             }
